@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ead7">
+  <meta name="description" content="لینک‌های رسمی مارتو و هوش‌مد">
+  <title>لینک‌های مارتو | هوش‌مد</title>
+  <style>
+    :root {
+      --cream: #f3ead7;
+      --paper: #fbf7ee;
+      --ink: #28251f;
+      --muted: #766e60;
+      --line: #dfd2ba;
+      --accent: #a66a3f;
+      --accent-dark: #75472c;
+      --sage: #7b8063;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      padding: 34px 18px;
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 12%, rgba(166,106,63,.10) 0 2px, transparent 3px),
+        radial-gradient(circle at 88% 84%, rgba(123,128,99,.12) 0 2px, transparent 3px),
+        var(--cream);
+      background-size: 34px 34px, 42px 42px, auto;
+      font-family: Tahoma, "Segoe UI", sans-serif;
+    }
+    .page {
+      width: min(100%, 460px);
+      position: relative;
+      overflow: hidden;
+      padding: 34px 25px 25px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(251,247,238,.94);
+      box-shadow: 0 18px 55px rgba(74, 55, 32, .10);
+    }
+    .page::before, .page::after {
+      content: "";
+      position: absolute;
+      width: 150px; height: 150px;
+      border: 1px solid rgba(166,106,63,.18);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page::before { top: -95px; right: -72px; }
+    .page::after { bottom: -105px; left: -80px; }
+    .ornament {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      color: var(--accent);
+      margin-bottom: 13px;
+    }
+    .ornament span { width: 42px; height: 1px; background: var(--line); }
+    .symbol {
+      width: 76px; height: 76px;
+      margin: 0 auto 14px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      border: 1px solid #d9c7a8;
+      background: #f0dfbd;
+      color: var(--ink);
+      box-shadow: inset 0 0 0 6px rgba(255,255,255,.32);
+    }
+    .symbol svg { width: 42px; height: 42px; }
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 29px;
+      letter-spacing: -.8px;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 8px 0 26px;
+    }
+    .section {
+      position: relative;
+      padding: 19px 17px 17px;
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 19px;
+      background: #fffdf8;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 9px;
+    }
+    .icon {
+      width: 42px; height: 42px;
+      flex: 0 0 42px;
+      display: grid; place-items: center;
+      border-radius: 13px;
+      color: var(--accent-dark);
+      background: #f1e5d0;
+    }
+    .icon svg { width: 23px; height: 23px; }
+    h2 { font-size: 17px; margin: 0; }
+    .description {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 2;
+      margin: 0 0 14px;
+    }
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 0 0 16px;
+    }
+    .topics span {
+      font-size: 11px;
+      color: #655b4d;
+      border: 1px solid #e6dac7;
+      background: #f8f1e5;
+      padding: 5px 9px;
+      border-radius: 20px;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 15px;
+      border-radius: 13px;
+      text-decoration: none;
+      color: #fffaf1;
+      background: var(--ink);
+      font-size: 14px;
+      font-weight: bold;
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+      box-shadow: 0 5px 13px rgba(40,37,31,.12);
+    }
+    .button:hover { transform: translateY(-2px); background: var(--accent-dark); }
+    .button:focus-visible { outline: 3px solid #bd8b5f; outline-offset: 3px; }
+    .button svg { width: 19px; height: 19px; }
+    .footer {
+      text-align: center;
+      margin-top: 23px;
+      color: #928675;
+      font-size: 11px;
+      letter-spacing: .3px;
+    }
+    @media (max-width: 380px) {
+      .page { padding: 28px 17px 21px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="ornament" aria-hidden="true"><span></span> ✳ <span></span></div>
+    <div class="symbol" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none">
+        <path d="M24 7c-8 0-13 6-13 14 0 5 2 8 5 11v7h16v-7c3-3 5-7 5-11C37 13 32 7 24 7Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M18 43h12M18 38h12M19 19c2-4 8-5 11-1M18 26c2 2 4 3 6 3m6-4c-1 2-2 3-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="20" cy="22" r="1.4" fill="currentColor"/><circle cx="29" cy="22" r="1.4" fill="currentColor"/>
+      </svg>
+    </div>
+    <h1>مرتو</h1>
+    <p class="subtitle">از فهم انسان تا شناخت دنیای هوش مصنوعی</p>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="6" width="18" height="13" rx="3"/><path d="m10 10 5 2.5-5 2.5zM8 3h8"/>
+          </svg>
+        </div>
+        <h2>کانال یوتیوب مارتو</h2>
+      </div>
+      <p class="description">ویدیوهای بلند در کانال یوتیوب، هر آخر هفته</p>
+      <a class="button" href="https://youtube.com/@marto_13-u5o?si=AV0K-LPdFlwYibRm" target="_blank" rel="noopener noreferrer">
+        تماشای ویدیوها
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a4 4 0 0 0-4 4v1a4 4 0 0 0-3 4v1a4 4 0 0 0 4 4h1v3h4v-3h1a4 4 0 0 0 4-4v-1a4 4 0 0 0-3-4V7a4 4 0 0 0-4-4Z"/>
+            <path d="M8 8h.01M16 8h.01M8 13h.01M16 13h.01M12 5v14"/>
+          </svg>
+        </div>
+        <h2>هوش‌مد | هوش مصنوعی در علوم پزشکی</h2>
+      </div>
+      <p class="description">آموزش هوش مصنوعی در علوم پزشکی؛ از کاربردهای عملی تا ساخت ابزارهای هوشمند.</p>
+      <div class="topics" aria-label="موضوعات کانال">
+        <span>پرامپت‌نویسی</span>
+        <span>اتوماسیون</span>
+        <span>ایجنت‌های هوش مصنوعی</span>
+        <span>آموزش AI در علوم پزشکی</span>
+      </div>
+      <a class="button" href="https://t.me/HoshMed" target="_blank" rel="noopener noreferrer">
+        ورود به کانال تلگرام هوش‌مد
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </section>
+
+    <div class="footer">MARTO  ·  HOSHMED</div>
+  </main>
+</body>
+</html>
